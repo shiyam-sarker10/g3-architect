@@ -29,8 +29,8 @@
 .primary {
   color: #ff900e;
 }
-.gray{
-  color:#727272;
+.gray {
+  color: #727272;
   font-size: 2.8rem;
   font-weight: 500;
 }
@@ -39,7 +39,7 @@
 header {
   background-color: rgba(255, 144, 14, 0.1);
   padding: 50px 240px;
-  margin-bottom:5rem;
+  margin-bottom: 5rem;
 }
 /* nav section  */
 nav {
@@ -96,107 +96,155 @@ nav {
 /* main section start  */
 
 /* features section  */
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
 }
-.features{
+.features {
   display: flex;
   align-items: center;
-  gap:4.4rem;
-  margin:0 30px;
-  margin-bottom:9.4rem;
+  gap: 4.4rem;
+  margin: 0 30px;
+  margin-bottom: 9.4rem;
 }
-.gallery-column{
-
+.gallery-column {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap:1.5rem;
-
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
 }
 .gallery-img {
-  max-width:350px;
+  max-width: 350px;
 }
-.content-column{
+.content-column {
   max-width: 525px;
 }
-.feature-title{
-  margin-bottom:1.5rem;
+.feature-title {
+  margin-bottom: 1.5rem;
 }
-.feature-btn{
-  margin-top:2rem;
+.feature-btn {
+  margin-top: 2rem;
 }
 /* Experience section  */
+.experience {
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  margin-bottom: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.exp-title {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  border-left: 5px solid #ff900e;
+}
+.exp-description {
+  margin-bottom: 30px;
+}
+.card {
+  padding: 30px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.card-title {
+  color: #131313;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.author-profile {
+  position: relative;
+}
 
+.experience-btn {
+  padding: 40px;
+  position: absolute;
+  left: -12%;
+  bottom: -5%;
+  border-radius: 8px;
+}
+.btn-title {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+}
+.btn-text {
+  color: #fff;
+
+  font-size: 1.5rem;
+
+  font-weight: 500;
+  line-height: 2.5rem;
+}
 /* Facts section  */
-.facts{
-  margin-bottom :150px;
+.facts {
+  margin-bottom: 150px;
+  margin-left: 25px;
 }
-.facts-description{
+.facts-description {
   max-width: 550px;
-  margin-bottom:100px;
+  margin-top: 25px;
+  margin-bottom: 100px;
 }
-.facts-card-container{
+.facts-card-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.facts-card{
+.facts-card {
   border-radius: 8px;
-border: 1px solid #FF900E;
-padding:2.3rem 2rem;
-text-align: center;
+  border: 1px solid #ff900e;
+  padding: 2.3rem 2rem;
+  text-align: center;
 }
-.fact-number{
+.fact-number {
   color: #424242;
-font-size: 2.8rem;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
+  font-size: 2.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
-.fact-text{
+.fact-text {
   color: #727272;
-font-size: 1.25rem;
-font-weight: 600;
+  font-size: 1.25rem;
+  font-weight: 600;
 }
 /* sponsor section  */
-.sponsor{
+.sponsor {
   text-align: center;
-  margin-bottom:130px;
+  margin-bottom: 130px;
 }
-.sponsor-description{
+.sponsor-description {
   max-width: 550px;
   margin: auto;
-  margin-top:1rem;
-  margin-bottom:3.125rem;
+  margin-top: 1rem;
+  margin-bottom: 3.125rem;
 }
-.logo-container{
+.logo-container {
   display: grid;
-  grid-template-columns: repeat(5,1fr);
+  grid-template-columns: repeat(5, 1fr);
   justify-content: space-between;
   align-content: center;
 }
 /* responsive media queries  */
 /* small device  */
 @media screen and (max-width: 576px) {
-  /* common style  */
+  /*common style  */
   .section-title {
-  
-  font-size: 1.8rem;
-  
-}
-.gray{
-  color:#727272;
-  font-size: 1.8rem;
-  font-weight: 500;
-}
-.section-description {
-  color: #727272;
-  line-height: 1rem;
-}
-.btn {
-  padding: 10px 15px;
-}
+    font-size: 1.8rem;
+  }
+  .gray {
+    color: #727272;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  .section-description {
+    color: #727272;
+    line-height: 1rem;
+  }
+  .btn {
+    padding: 10px 15px;
+  }
   /* header  */
   header {
     padding: 30px 10px;
@@ -206,8 +254,8 @@ font-weight: 600;
     gap: 20px;
   }
   .logo-name {
-  font-size: 1.5rem;
-}
+    font-size: 1.5rem;
+  }
   .menu {
     flex-wrap: wrap;
   }
@@ -215,246 +263,332 @@ font-weight: 600;
     margin-right: 20px;
   }
   .menu-item a {
-  font-size: 0.8rem;
-}
+    font-size: 0.8rem;
+  }
   .banner-title {
     font-size: 2rem;
   }
   /* feature  */
-  .features{
+  .features {
     flex-direction: column;
-    margin:0 30px;
+    margin: 0 30px;
   }
-  .gallery-column{
-    grid-template-columns:1fr;
-    
+  .gallery-column {
+    grid-template-columns: 1fr;
   }
   .gallery-img {
-  max-width:200px;
-}
-/* fact section  */
-.facts{
-  margin:100px 25px;
-}
-.facts-description{
-  margin: 0;
-  margin-bottom : 50px;
-  max-width: 550px;
-}
-.facts-card-container{
-  flex-direction: column;
-  gap:30px;
-}
-/* sponsor section  */
-.sponsor{
-  margin-right:10px;
-  margin-left:10px;
-}
-.sponsor-description{
-  max-width: 400px;
-}
-.logo-container{
-  grid-template-columns:1fr;
-  gap:50px;
-  width:max-content;
-  margin: auto;
-  justify-content: center;
+    max-width: 200px;
+  }
+  /* experience  */
+  .experience {
+    flex-direction: column;
+    margin: 20px;
+  }
 
-}
+  .card {
+    margin: 10px;
+  }
 
+  .author-img {
+    max-width: 250px;
+  }
+  .btn-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .btn-text {
+    color: #fff;
+
+    font-size: 1rem;
+
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+
+  /* fact section  */
+  .facts {
+    margin: 100px 25px;
+  }
+  .facts-description {
+    margin: 0;
+    margin-bottom: 50px;
+    max-width: 550px;
+  }
+  .facts-card-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* sponsor section  */
+  .sponsor {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  .sponsor-description {
+    max-width: 400px;
+  }
+  .logo-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    width: max-content;
+    margin: auto;
+    justify-content: center;
+  }
 }
 /* medium device  */
-@media screen and (min-width:576px) and (max-width:768px) {
-   /* common style  */
-   .section-title {
-  
-  font-size: 2.4rem;
-  
-}
-.gray{
-  color:#727272;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-.section-description {
-  color: #727272;
-  line-height: 1rem;
-}
-.btn {
-  padding: 15px 20px;
-}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  /* common style  */
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .gray {
+    color: #727272;
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  .section-description {
+    color: #727272;
+    line-height: 1rem;
+  }
+  .btn {
+    padding: 15px 20px;
+  }
 
+  /* header section */
 
-/* header section */
-
-    header {
+  header {
     padding: 30px 10px;
   }
-   .nav-container {
+  .nav-container {
     flex-direction: column;
     gap: 50px;
   }
-    .menu {
+  .menu {
     flex-wrap: wrap;
   }
   .menu-item {
     margin-right: 20px;
   }
-   .banner-title {
+  .banner-title {
     font-size: 3rem;
   }
   /* feature  */
-   .features{
+  .features {
     flex-direction: column;
-   
   }
-    .gallery-img {
-  max-width:200px;
+  .gallery-img {
+    max-width: 200px;
+  }
+  .content-column {
+    max-width: 450px;
+  }
+  /* experience  */
+  .experience {
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 130px;
+  }
+  .card {
+    margin: 10px;
+  }
 
-}
-.content-column{
-  max-width: 450px;
-}
-/* fact section  */
-.facts{
-  margin-left:25px;
-}
-.facts-description{
-  margin: 0;
-  margin-bottom : 50px;
-  max-width: 500px;
-}
-.facts-card-container{
-  flex-direction: column;
-  gap:30px;
-}
-/* sponsor section  */
+  .author-img {
+    max-width: 250px;
+  }
+  .btn-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .btn-text {
+    color: #fff;
 
-.logo-container{
-  grid-template-columns:1fr 1fr;
-  gap: 50px;
-  margin-left:100px;
-  
-}
-}
+    font-size: 1rem;
 
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+  /* fact section  */
+  .facts {
+    margin-left: 25px;
+  }
+  .facts-description {
+    margin: 0;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .facts-card-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* sponsor section  */
 
-
-/* large-device  */
-@media screen and (min-width:768px) and (max-width:992px){
-     /* common style  */
-   .section-title {
-  
-  font-size: 2.4rem;
-  
-}
-.gray{
-  color:#727272;
-  font-size: 2.4rem;
-  font-weight: 500;
-}
-.section-description {
-  color: #727272;
-  line-height: 1rem;
-}
-.btn {
-  padding: 15px 20px;
+  .logo-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin-left: 100px;
+  }
 }
 
+/*large-device  */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* common style  */
+  .section-title {
+    font-size: 2.4rem;
+  }
+  .gray {
+    color: #727272;
+    font-size: 2.4rem;
+    font-weight: 500;
+  }
+  .section-description {
+    color: #727272;
+    line-height: 1rem;
+  }
+  .btn {
+    padding: 15px 20px;
+  }
 
-/* header section */
-   header {
+  /* header section */
+  header {
     padding: 30px 30px;
   }
-   .nav-container {
-   
+  .nav-container {
     gap: 50px;
   }
-    .menu {
+  .menu {
     flex-wrap: wrap;
   }
   .menu-item {
     margin-right: 25px;
   }
-  .banner-content{
-    max-width:500px;
+  .banner-content {
+    max-width: 500px;
   }
-   .banner-title {
+  .banner-title {
     font-size: 3rem;
   }
   /* features  */
-      .gallery-img {
-  max-width:200px;
-}
-.features{
-  gap:2rem;
-}
-/* fact section  */
-.facts{
-  margin-left:25px;
-  text-align: center;
-}
-.facts-description{
-  margin: auto;
-  margin-bottom : 50px;
-  max-width: 500px;
-}
-.facts-card-container{
-  flex-direction: column;
-  gap:30px;
-}
-/* sponsor  */
+  .gallery-img {
+    max-width: 200px;
+  }
+  .features {
+    gap: 2rem;
+  }
+  /* experience  */
+  .experience {
+    flex-direction: column;
+    margin: 20px;
+    margin-bottom: 130px;
+  }
+  .card {
+    margin: 10px;
+  }
 
+  .author-img {
+    max-width: 450px;
+  }
+  .btn-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .btn-text {
+    color: #fff;
 
-.logo-container{
-  grid-template-columns:1fr 1fr 1fr;
-  row-gap: 50px;
-  justify-content: space-between;
-  margin-left:100px;
-   margin-right:100px;
-}
+    font-size: 1rem;
+
+    font-weight: 500;
+    line-height: 2.5rem;
+  }
+  /* fact section  */
+  .facts {
+    margin-left: 25px;
+    text-align: center;
+  }
+  .facts-description {
+    margin: auto;
+    margin-bottom: 50px;
+    max-width: 500px;
+  }
+  .facts-card-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  /* sponsor  */
+
+  .logo-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 50px;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 }
 /* extra-large device */
-@media screen and (min-width:992px) and (max-width:1200px){
-     header {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  header {
     padding: 30px 100px;
   }
-    .menu-item {
+  .menu-item {
     margin-right: 25px;
   }
-    .gallery-img {
-  max-width:200px;
-}
-/*facts*/
-.facts{
-  margin-left:25px;
+  .gallery-img {
+    max-width: 200px;
+  }
+  /* experience  */
+  .experience {
+    flex-direction: column;
+    margin: 50px;
+    margin-bottom: 130px;
+  }
+  .card {
+    margin: 10px;
+  }
 
-}
-/* sponsor */
-.logo-container{
+  .author-img {
+    max-width: 450px;
+  }
+  .btn-title {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .btn-text {
+    color: #fff;
 
+    font-size: 1rem;
 
-margin-right:20px;
-  margin-left:20px;
- 
-}
-}
-/* Extra-Extra large device  */
-@media screen and (min-width:1200px) and (max-width:1400px){
-       header {
-    padding: 30px 120px;
+    font-weight: 500;
+    line-height: 2.5rem;
   }
   /*facts*/
-.facts{
-  margin-left:25px;
-
+  .facts {
+    margin-left: 25px;
+  }
+  /* sponsor */
+  .logo-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
-/* sponsor */
-.logo-container{
-
-
-margin-right:20px;
-  margin-left:20px;
- 
-}
+/* Extra-Extra large device  */
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+  header {
+    padding: 30px 120px;
+  }
+  /* experience  */
+  .experience {
+    flex-direction: column;
+    margin: 50px;
+    margin-bottom: 150px;
+  }
+  .card {
+    margin: 10px;
+  }
+  /*facts*/
+  .facts {
+    margin-left: 25px;
+  }
+  /* sponsor */
+  .logo-container {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
