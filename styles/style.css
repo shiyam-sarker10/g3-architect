@@ -585,15 +585,18 @@ footer {
   }
 }
 /* Extra-Extra large device  */
+
 @media screen and (min-width: 1200px) and (max-width: 1400px) {
   header {
     padding: 30px 120px;
   }
   /* experience  */
   .experience {
-    flex-direction: column;
     margin: 50px;
     margin-bottom: 150px;
+  }
+   .author-img {
+    max-width: 550px;
   }
   .card {
     margin: 10px;
