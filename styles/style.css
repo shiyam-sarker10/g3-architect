@@ -105,7 +105,7 @@ main{
   align-items: center;
   gap:4.4rem;
   margin:0 30px;
-  margin-bottom:8rem;
+  margin-bottom:9.4rem;
 }
 .gallery-column{
 
@@ -125,6 +125,36 @@ main{
 }
 .feature-btn{
   margin-top:2rem;
+}
+/* Experience section  */
+
+/* Facts section  */
+.facts-description{
+  max-width: 550px;
+  margin-bottom:100px;
+}
+.facts-card-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.facts-card{
+  border-radius: 8px;
+border: 1px solid #FF900E;
+padding:2.3rem 2rem;
+text-align: center;
+}
+.fact-number{
+  color: #424242;
+font-size: 2.8rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.fact-text{
+  color: #727272;
+font-size: 1.25rem;
+font-weight: 600;
 }
 /* responsive media queries  */
 /* small device  */
@@ -176,11 +206,24 @@ main{
     margin:0 30px;
   }
   .gallery-column{
-    grid-template-columns: repeat(1,1fr);
+    grid-template-columns:1fr;
     
   }
   .gallery-img {
-  max-width:200px;
+  max-width:300px;
+}
+/* fact section  */
+.facts{
+  margin:100px 25px;
+}
+.facts-description{
+  margin: 0;
+  margin-bottom : 50px;
+  max-width: 550px;
+}
+.facts-card-container{
+  flex-direction: column;
+  gap:30px;
 }
 }
 /* medium device  */
@@ -235,7 +278,23 @@ main{
 .content-column{
   max-width: 450px;
 }
+/* fact section  */
+.facts{
+  margin-left:25px;
 }
+.facts-description{
+  margin: 0;
+  margin-bottom : 50px;
+  max-width: 500px;
+}
+.facts-card-container{
+  flex-direction: column;
+  gap:30px;
+}
+}
+
+
+
 /* large-device  */
 @media screen and (min-width:768px) and (max-width:992px){
      /* common style  */
@@ -285,6 +344,20 @@ main{
 .features{
   gap:2rem;
 }
+/* fact section  */
+.facts{
+  margin-left:25px;
+  text-align: center;
+}
+.facts-description{
+  margin: auto;
+  margin-bottom : 50px;
+  max-width: 500px;
+}
+.facts-card-container{
+  flex-direction: column;
+  gap:30px;
+}
 }
 /* extra-large device */
 @media screen and (min-width:992px) and (max-width:1200px){
@@ -297,10 +370,20 @@ main{
     .gallery-img {
   max-width:200px;
 }
+/*facts*/
+.facts{
+  margin-left:25px;
+
+}
 }
 /* Extra-Extra large device  */
 @media screen and (min-width:1200px) and (max-width:1400px){
        header {
     padding: 30px 120px;
   }
+  /*facts*/
+.facts{
+  margin-left:25px;
+
+}
 }
