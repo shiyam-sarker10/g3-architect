@@ -129,6 +129,9 @@ main{
 /* Experience section  */
 
 /* Facts section  */
+.facts{
+  margin-bottom :150px;
+}
 .facts-description{
   max-width: 550px;
   margin-bottom:100px;
@@ -155,6 +158,23 @@ line-height: normal;
   color: #727272;
 font-size: 1.25rem;
 font-weight: 600;
+}
+/* sponsor section  */
+.sponsor{
+  text-align: center;
+  margin-bottom:130px;
+}
+.sponsor-description{
+  max-width: 550px;
+  margin: auto;
+  margin-top:1rem;
+  margin-bottom:3.125rem;
+}
+.logo-container{
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  justify-content: space-between;
+  align-content: center;
 }
 /* responsive media queries  */
 /* small device  */
@@ -210,7 +230,7 @@ font-weight: 600;
     
   }
   .gallery-img {
-  max-width:300px;
+  max-width:200px;
 }
 /* fact section  */
 .facts{
@@ -225,6 +245,23 @@ font-weight: 600;
   flex-direction: column;
   gap:30px;
 }
+/* sponsor section  */
+.sponsor{
+  margin-right:10px;
+  margin-left:10px;
+}
+.sponsor-description{
+  max-width: 400px;
+}
+.logo-container{
+  grid-template-columns:1fr;
+  gap:50px;
+  width:max-content;
+  margin: auto;
+  justify-content: center;
+
+}
+
 }
 /* medium device  */
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -290,6 +327,14 @@ font-weight: 600;
 .facts-card-container{
   flex-direction: column;
   gap:30px;
+}
+/* sponsor section  */
+
+.logo-container{
+  grid-template-columns:1fr 1fr;
+  gap: 50px;
+  margin-left:100px;
+  
 }
 }
 
@@ -358,6 +403,16 @@ font-weight: 600;
   flex-direction: column;
   gap:30px;
 }
+/* sponsor  */
+
+
+.logo-container{
+  grid-template-columns:1fr 1fr 1fr;
+  row-gap: 50px;
+  justify-content: space-between;
+  margin-left:100px;
+   margin-right:100px;
+}
 }
 /* extra-large device */
 @media screen and (min-width:992px) and (max-width:1200px){
@@ -375,6 +430,14 @@ font-weight: 600;
   margin-left:25px;
 
 }
+/* sponsor */
+.logo-container{
+
+
+margin-right:20px;
+  margin-left:20px;
+ 
+}
 }
 /* Extra-Extra large device  */
 @media screen and (min-width:1200px) and (max-width:1400px){
@@ -385,5 +448,13 @@ font-weight: 600;
 .facts{
   margin-left:25px;
 
+}
+/* sponsor */
+.logo-container{
+
+
+margin-right:20px;
+  margin-left:20px;
+ 
 }
 }
